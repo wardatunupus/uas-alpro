@@ -67,8 +67,9 @@ CREATE TABLE `user` (
 -- Dumping data untuk tabel `user`
 --
 
-INSERT INTO `user` (`id`, `username`, `password`) VALUES
-(2, 'admin', '21232f297a57a5a743894a0e4a801fc3');
+INSERT INTO `user` (`id`, `username`, `password`) 
+VALUES
+(2, 'admin', '21232f297a57a5a743894a0e4a801fc3'),
 (3, 'ilham', '12345678');
 
 --
