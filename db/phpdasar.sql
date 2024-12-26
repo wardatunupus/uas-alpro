@@ -69,7 +69,6 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `username`, `password`) VALUES
 (2, 'bella@gmail.com', '21232f297a57a5a743894a0e4a801fc3');
-(3, 'ilham', '12345678');
 
 --
 -- Indexes for dumped tables
