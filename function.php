@@ -1,6 +1,6 @@
 <?php
 // Koneksi Database
-$koneksi = mysqli_connect("localhost", "root", "", "archive");
+$koneksi = mysqli_connect("localhost", "root", "", "identity");
 
 // membuat fungsi query dalam bentuk array
 function query($query)
