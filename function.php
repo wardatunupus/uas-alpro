@@ -1,6 +1,6 @@
 <?php
 // Koneksi Database
-$koneksi = mysqli_connect("localhost", "root", "", "phpdasar");
+$koneksi = mysqli_connect("localhost", "root", "", "archive");
 
 // membuat fungsi query dalam bentuk array
 function query($query)
@@ -31,7 +31,7 @@ function tambah($data)
     $tmpt_Lahir = htmlspecialchars($data['tmpt_Lahir']);
     $tgl_Lahir = $data['tgl_Lahir'];
     $jekel = $data['jekel'];
-    $jurusan = $data['jurusan'];
+    $jalur_masuk = $data['jalur_masuk'];
     $email = htmlspecialchars($data['email']);
     $gambar = upload();
     $alamat = htmlspecialchars($data['alamat']);
@@ -40,7 +40,7 @@ function tambah($data)
         return false;
     }
 
-    $sql = "INSERT INTO siswa VALUES ('$nis','$nama','$tmpt_Lahir','$tgl_Lahir','$jekel','$jurusan','$email','$gambar','$alamat')";
+    $sql = "INSERT INTO siswa VALUES ('$nis','$nama','$tmpt_Lahir','$tgl_Lahir','$jekel','$jalur_masuk','$email','$gambar','$alamat')";
 
     mysqli_query($koneksi, $sql);
 
@@ -66,7 +66,7 @@ function ubah($data)
     $tmpt_Lahir = htmlspecialchars($data['tmpt_Lahir']);
     $tgl_Lahir = $data['tgl_Lahir'];
     $jekel = $data['jekel'];
-    $jurusan = $data['jurusan'];
+    $jalur_masuk = $data['jalur_masuk'];
     $email = htmlspecialchars($data['email']);
     $alamat = htmlspecialchars($data['alamat']);
 
@@ -78,7 +78,7 @@ function ubah($data)
         $gambar = upload();
     }
 
-    $sql = "UPDATE siswa SET nama = '$nama', tmpt_Lahir = '$tmpt_Lahir', tgl_Lahir = '$tgl_Lahir', jekel = '$jekel', jurusan = '$jurusan', email = '$email', gambar = '$gambar', alamat = '$alamat' WHERE nis = $nis";
+    $sql = "UPDATE siswa SET nama = '$nama', tmpt_Lahir = '$tmpt_Lahir', tgl_Lahir = '$tgl_Lahir', jekel = '$jekel', jalur_masuk = '$jalur_masuk', email = '$email', gambar = '$gambar', alamat = '$alamat' WHERE nis = $nis";
 
     mysqli_query($koneksi, $sql);
 

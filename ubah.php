@@ -119,13 +119,13 @@ if (isset($_POST['ubah'])) {
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="jurusan" class="form-label">Jurusan</label>
-                        <select class="form-select w-50" id="jurusan" name="jurusan">
-                            <option disabled selected value>--------------------------------------------Pilih Jurusan--------------------------------------------</option>
-                            <option value="Teknik Jaringan Akses" <?php if ($siswa['jurusan'] == 'Teknik Jaringan Akses') { ?> selected='' <?php } ?>>Teknik Jaringan Akses</option>
-                            <option value="Teknik Komputer dan Jaringan" <?php if ($siswa['jurusan'] == 'Teknik Komputer dan Jaringan') { ?> selected='' <?php } ?>>Teknik Komputer dan Jaringan</option>
-                            <option value="Multimedia" <?php if ($siswa['jurusan'] == 'Multimedia') { ?> selected='' <?php } ?>>Multimedia</option>
-                            <option value="Rekayasa Perangkat Lunak" <?php if ($siswa['jurusan'] == 'Rekayasa Perangkat Lunak') { ?> selected='' <?php } ?>>Rekayasa Perangkat Lunak</option>
+                        <label for="jalur_masuk" class="form-label">Jalur Masuk</label>
+                        <select class="form-select w-50" id="jalur_masuk" name="jalur_masuk">
+                            <option disabled selected value>--------------------------------------------Jalur Masuk--------------------------------------------</option>
+                            <option value="SNBP" <?php if ($siswa['jalur_masuk'] == 'SNBP') { ?> selected='' <?php } ?>>SNBP</option>
+                            <option value="SNBT" <?php if ($siswa['jalur_masuk'] == 'SNBT') { ?> selected='' <?php } ?>>SNBT</option>
+                            <option value="MANDIRI" <?php if ($siswa['jalur_masuk'] == 'MANDIRI') { ?> selected='' <?php } ?>>MANDIRI</option>
+                            
                         </select>
                     </div>
                     <div class="mb-3">
@@ -161,15 +161,15 @@ if (isset($_POST['ubah'])) {
             </div>
             <div class="col-md-6 my-2 text-center link">
                 <h4 class="fw-bold text-uppercase">Account Links</h4>
-                <a href="https://web.facebook.com/akunli/" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
-                <a href="https://github.com/akunlu" target="_blank"><i class="bi bi-github fs-3"></i></a>
-                <a href="https://www.instagram.com/akunlu/" target="_blank"><i class="bi bi-instagram fs-3"></i></a>
-                <a href="https://twitter.com/akunlu" target="_blank"><i class="bi bi-twitter fs-3"></i></a>
+                <a href="https://web.facebook.com/bella/" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
+                <a href="https://github.com/wardatunupus" target="_blank"><i class="bi bi-github fs-3"></i></a>
+                <a href="https://www.instagram.com/wardatunupus/" target="_blank"><i class="bi bi-instagram fs-3"></i></a>
+                <a href="https://twitter.com/lalala" target="_blank"><i class="bi bi-twitter fs-3"></i></a>
             </div>
         </div>
     </div>
     <footer class="bg-dark text-white text-center" style="padding: 5px;">
-        <p>Created with <i class="bi bi-suit-heart-fill" style="color: red;"></i> by <a href="https://instagram.com/akunlu" target="_blank" style="color: #fff;">namalu</a></p>
+        <p>Created with <i class="bi bi-suit-heart-fill" style="color: red;"></i> by <a href="https://instagram.com/wardatunupus" target="_blank" style="color: #fff;">Bella Wardatunupus</a></p>
     </footer>
     <!-- Close Footer -->
 

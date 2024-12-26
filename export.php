@@ -22,7 +22,7 @@ header("Content-Disposition: attachment; filename=Data Siswa.xls");
             <th>Tempat dan Tanggal Lahir</th>
             <th>Umur</th>
             <th>Jenis Kelamin</th>
-            <th>Jurusan</th>
+            <th>Jalur Masuk</th>
             <th>E-Mail</th>
             <th>Alamat</th>
         </tr>
@@ -43,7 +43,7 @@ header("Content-Disposition: attachment; filename=Data Siswa.xls");
                 ?>
                 <td><?= floor($hitung); ?> Tahun</td>
                 <td><?= $row['jekel']; ?></td>
-                <td><?= $row['jurusan']; ?></td>
+                <td><?= $row['jalur_masuk']; ?></td>
                 <td><?= $row['email']; ?></td>
                 <td><?= $row['alamat']; ?></td>
             </tr>

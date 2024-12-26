@@ -33,8 +33,8 @@ if (isset($_POST['dataSiswa'])) {
                             <td width="60%">' . $row['jekel'] . '</td>
                         </tr>
                         <tr>
-                            <th width="40%">Jurusan</th>
-                            <td width="60%">' . $row['jurusan'] . '</td>
+                            <th width="40%">Jalur Masuk</th>
+                            <td width="60%">' . $row['jalur_masuk'] . '</td>
                         </tr>
                         <tr>
                             <th width="40%">E-Mail</th>

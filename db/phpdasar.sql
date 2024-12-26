@@ -24,7 +24,7 @@ CREATE TABLE `siswa` (
   `tmpt_Lahir` varchar(50) NOT NULL,
   `tgl_Lahir` date NOT NULL,
   `jekel` enum('Laki - Laki','Perempuan') NOT NULL,
-  `jurusan` enum('Teknik Jaringan Akses','Teknik Komputer dan Jaringan','Multimedia','Rekayasa Perangkat Lunak') NOT NULL,
+  `jalur_masuk` enum('SNBP','SNBT','MANDIRI') NOT NULL,
   `email` varchar(255) NOT NULL,
   `gambar` varchar(255) NOT NULL,
   `alamat` text NOT NULL
@@ -34,7 +34,7 @@ CREATE TABLE `siswa` (
 -- Dumping data untuk tabel `siswa`
 --
 
-INSERT INTO `siswa` (`nis`, `nama`, `tmpt_Lahir`, `tgl_Lahir`, `jekel`, `jurusan`, `email`, `gambar`, `alamat`) VALUES
+INSERT INTO `siswa` (`nis`, `nama`, `tmpt_Lahir`, `tgl_Lahir`, `jekel`, `jalur_masuk`, `email`, `gambar`, `alamat`) VALUES
 ('210301', 'Tobiah Mc Mechan', 'Mangaldan', '2001-06-03', 'Perempuan', 'Teknik Komputer dan Jaringan', 'tmcmechan0@tamu.edu', '60433ff651b20.png', '14 Sloan Park'),
 ('210302', 'Gav Colly', 'Kamieniec Podolski', '2003-01-23', 'Laki - Laki', 'Rekayasa Perangkat Lunak', 'gcolly1@simplemachines.org', '604340becfb49.png', '8 Brentwood Hill'),
 ('210303', 'Editha Jiggens', 'Uyugan', '2000-04-22', 'Laki - Laki', 'Multimedia', 'ejiggens2@bloglines.com', '604342d27f34b.png', '2 Heffernan Street'),

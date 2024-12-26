@@ -85,7 +85,7 @@ $siswa = query("SELECT * FROM siswa ORDER BY nis DESC");
                             <th>Nama</th>
                             <th>Jenis Kelamin</th>
                             <th>Umur</th>
-                            <th>Jurusan</th>
+                            <th>Jalur Masuk</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -103,7 +103,7 @@ $siswa = query("SELECT * FROM siswa ORDER BY nis DESC");
                                 $hitung = ($now - $timeTahun) / $setahun;
                                 ?>
                                 <td><?= floor($hitung); ?> Tahun</td>
-                                <td><?= $row['jurusan']; ?></td>
+                                <td><?= $row['jalur_masuk']; ?></td>
                                 <td>
                                     <button class="btn btn-success btn-sm text-white detail" data-id="<?= $row['nis']; ?>" style="font-weight: 600;"><i class="bi bi-info-circle-fill"></i>&nbsp;Detail</button> |
 
@@ -144,15 +144,15 @@ $siswa = query("SELECT * FROM siswa ORDER BY nis DESC");
             </div>
             <div class="col-md-6 my-2 text-center link">
                 <h4 class="fw-bold text-uppercase">Account Links</h4>
-                <a href="https://web.facebook.com/akunlu/" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
-                <a href="https://github.com/akunlu" target="_blank"><i class="bi bi-github fs-3"></i></a>
-                <a href="https://www.instagram.com/akunlu/" target="_blank"><i class="bi bi-instagram fs-3"></i></a>
-                <a href="https://twitter.com/akunlu" target="_blank"><i class="bi bi-twitter fs-3"></i></a>
+                <a href="https://web.facebook.com/bella/" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
+                <a href="https://github.com/wardatunupus" target="_blank"><i class="bi bi-github fs-3"></i></a>
+                <a href="https://www.instagram.com/wardatunupus/" target="_blank"><i class="bi bi-instagram fs-3"></i></a>
+                <a href="https://twitter.com/lalalala" target="_blank"><i class="bi bi-twitter fs-3"></i></a>
             </div>
         </div>
     </div>
     <footer class="bg-dark text-white text-center" style="padding: 5px;">
-        <p>Created with <i class="bi bi-suit-heart-fill" style="color: red;"></i> by <u style="color: #fff;">namalu</u></p>
+        <p>Created with <i class="bi bi-suit-heart-fill" style="color: red;"></i> by <u style="color: #fff;">Bella Wardatunupus</u></p>
     </footer>
     <!-- Close Footer -->
 

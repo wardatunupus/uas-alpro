@@ -112,13 +112,13 @@ if (isset($_POST['simpan'])) {
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="jurusan" class="form-label">Jurusan</label>
-                        <select class="form-select w-50" id="jurusan" name="jurusan">
-                            <option disabled selected value>--------------------------------------------Pilih Jurusan--------------------------------------------</option>
-                            <option value="Teknik Jaringan Akses">Teknik Jaringan Akses</option>
-                            <option value="Teknik Komputer dan Jaringan">Teknik Komputer dan Jaringan</option>
-                            <option value="Multimedia">Multimedia</option>
-                            <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+                        <label for="jalur_masuk" class="form-label">Jalur Masuk</label>
+                        <select class="form-select w-50" id="jalur_masuk" name="jalur_masuk">
+                            <option disabled selected value>--------------------------------------------Jalur Masuk--------------------------------------------</option>
+                            <option value="SNBP">SNBP</option>
+                            <option value="SNBT">SNBT</option>
+                            <option value="MANDIRI">MANDIRI</option>
+            
                         </select>
                     </div>
                     <div class="mb-3">
@@ -153,15 +153,15 @@ if (isset($_POST['simpan'])) {
             </div>
             <div class="col-md-6 my-2 text-center link">
                 <h4 class="fw-bold text-uppercase">Account Links</h4>
-                <a href="https://web.facebook.com/akunlu/" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
-                <a href="https://github.com/akunlu" target="_blank"><i class="bi bi-github fs-3"></i></a>
-                <a href="https://www.instagram.com/akunlu/" target="_blank"><i class="bi bi-instagram fs-3"></i></a>
-                <a href="https://twitter.com/akunlu" target="_blank"><i class="bi bi-twitter fs-3"></i></a>
+                <a href="https://web.facebook.com/bella/" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
+                <a href="https://github.com/wardatunupus" target="_blank"><i class="bi bi-github fs-3"></i></a>
+                <a href="https://www.instagram.com/wardatunupus/" target="_blank"><i class="bi bi-instagram fs-3"></i></a>
+                <a href="https://twitter.com/lalalala" target="_blank"><i class="bi bi-twitter fs-3"></i></a>
             </div>
         </div>
     </div>
     <footer class="bg-dark text-white text-center" style="padding: 5px;">
-        <p>Created with <i class="bi bi-suit-heart-fill" style="color: red;"></i> by <a href="https://instagram.com/akunlu/" target="_blank" style="color: #fff;">yang ini kasih nama lu</a></p>
+        <p>Created with <i class="bi bi-suit-heart-fill" style="color: red;"></i> by <a href="https://instagram.com/wardatunupus/" target="_blank" style="color: #fff;">Bella Wardatunupus</a></p>
     </footer>
     <!-- Close Footer -->
 
