@@ -3,7 +3,7 @@
 require 'function.php';
 
 // Menampilkan semua data dari table siswa berdasarkan nis secara Descending
-$siswa = query("SELECT * FROM siswa ORDER BY nis DESC");
+$siswa = query("SELECT * FROM siswa ORDER BY nim DESC");
 
 // Membuat nama file
 $filename = "data siswa-" . date('Ymd') . ".xls";
@@ -17,7 +17,7 @@ header("Content-Disposition: attachment; filename=Data Siswa.xls");
     <thead class="text-center">
         <tr>
             <th>No.</th>
-            <th>NIS</th>
+            <th>NIM</th>
             <th>Nama</th>
             <th>Tempat dan Tanggal Lahir</th>
             <th>Umur</th>
@@ -32,7 +32,7 @@ header("Content-Disposition: attachment; filename=Data Siswa.xls");
         <?php foreach ($siswa as $row) : ?>
             <tr>
                 <td><?= $no++; ?></td>
-                <td><?= $row['nis']; ?></td>
+                <td><?= $row['nim']; ?></td>
                 <td><?= $row['nama']; ?></td>
                 <td><?= $row['tmpt_Lahir']; ?>, <?= $row['tgl_Lahir']; ?></td>
                 <?php
