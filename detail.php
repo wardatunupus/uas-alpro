@@ -7,7 +7,7 @@ if (isset($_POST['dataSiswa'])) {
     $output = '';
 
     // mengambil data siswa dari nis yang berasal dari dataSiswa
-    $sql = "SELECT * FROM siswa WHERE nis = '" . $_POST['dataSiswa'] . "'";
+    $sql = "SELECT * FROM siswa WHERE nim = '" . $_POST['dataSiswa'] . "'";
     $result = mysqli_query($koneksi, $sql);
 
     $output .= '<div class="table-responsive">
@@ -17,8 +17,8 @@ if (isset($_POST['dataSiswa'])) {
                             <td colspan="2"><img src="img/' . $row['gambar'] . '" width="50%"></td>
                         </tr>
                         <tr>
-                            <th width="40%">NIS</th>
-                            <td width="60%">' . $row['nis'] . '</td>
+                            <th width="40%">NIM</th>
+                            <td width="60%">' . $row['nim'] . '</td>
                         </tr>
                         <tr>
                             <th width="40%">Nama</th>

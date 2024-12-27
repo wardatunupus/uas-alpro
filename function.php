@@ -1,6 +1,6 @@
 <?php
 // Koneksi Database
-$koneksi = mysqli_connect("localhost", "root", "", "identity");
+$koneksi = mysqli_connect("localhost", "root", "", "biodata");
 
 // membuat fungsi query dalam bentuk array
 function query($query)
@@ -15,6 +15,7 @@ function query($query)
 
     // mengambil semua data dalam bentuk array
     while ($row = mysqli_fetch_assoc($result)) {
+        
         $rows[] = $row;
     }
 
@@ -26,7 +27,7 @@ function tambah($data)
 {
     global $koneksi;
 
-    $nis = htmlspecialchars($data['nis']);
+    $nim = htmlspecialchars($data['nim']);
     $nama = htmlspecialchars($data['nama']);
     $tmpt_Lahir = htmlspecialchars($data['tmpt_Lahir']);
     $tgl_Lahir = $data['tgl_Lahir'];
@@ -40,7 +41,7 @@ function tambah($data)
         return false;
     }
 
-    $sql = "INSERT INTO siswa VALUES ('$nis','$nama','$tmpt_Lahir','$tgl_Lahir','$jekel','$jalur_masuk','$email','$gambar','$alamat')";
+    $sql = "INSERT INTO siswa VALUES ('$nim','$nama','$tmpt_Lahir','$tgl_Lahir','$jekel','$jalur_masuk','$email','$gambar','$alamat')";
 
     mysqli_query($koneksi, $sql);
 
@@ -48,11 +49,11 @@ function tambah($data)
 }
 
 // Membuat fungsi hapus
-function hapus($nis)
+function hapus($nim)
 {
     global $koneksi;
 
-    mysqli_query($koneksi, "DELETE FROM siswa WHERE nis = $nis");
+    mysqli_query($koneksi, "DELETE FROM siswa WHERE nim = $nim");
     return mysqli_affected_rows($koneksi);
 }
 
@@ -61,7 +62,7 @@ function ubah($data)
 {
     global $koneksi;
 
-    $nis = $data['nis'];
+    $nim = $data['nim'];
     $nama = htmlspecialchars($data['nama']);
     $tmpt_Lahir = htmlspecialchars($data['tmpt_Lahir']);
     $tgl_Lahir = $data['tgl_Lahir'];
@@ -78,7 +79,7 @@ function ubah($data)
         $gambar = upload();
     }
 
-    $sql = "UPDATE siswa SET nama = '$nama', tmpt_Lahir = '$tmpt_Lahir', tgl_Lahir = '$tgl_Lahir', jekel = '$jekel', jalur_masuk = '$jalur_masuk', email = '$email', gambar = '$gambar', alamat = '$alamat' WHERE nis = $nis";
+    $sql = "UPDATE siswa SET nama = '$nama', tmpt_Lahir = '$tmpt_Lahir', tgl_Lahir = '$tgl_Lahir', jekel = '$jekel', jalur_masuk = '$jalur_masuk', email = '$email', gambar = '$gambar', alamat = '$alamat' WHERE nim = $nim";
 
     mysqli_query($koneksi, $sql);
 

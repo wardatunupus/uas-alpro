@@ -11,7 +11,7 @@ if (!isset($_SESSION['login'])) {
 require 'function.php';
 
 // Menampilkan semua data dari table siswa berdasarkan nis secara Descending
-$siswa = query("SELECT * FROM siswa ORDER BY nis DESC");
+$siswa = query("SELECT * FROM siswa ORDER BY nim DESC");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -105,11 +105,11 @@ $siswa = query("SELECT * FROM siswa ORDER BY nis DESC");
                                 <td><?= floor($hitung); ?> Tahun</td>
                                 <td><?= $row['jalur_masuk']; ?></td>
                                 <td>
-                                    <button class="btn btn-success btn-sm text-white detail" data-id="<?= $row['nis']; ?>" style="font-weight: 600;"><i class="bi bi-info-circle-fill"></i>&nbsp;Detail</button> |
+                                    <button class="btn btn-success btn-sm text-white detail" data-id="<?= $row['nim']; ?>" style="font-weight: 600;"><i class="bi bi-info-circle-fill"></i>&nbsp;Detail</button> |
 
-                                    <a href="ubah.php?nis=<?= $row['nis']; ?>" class="btn btn-warning btn-sm" style="font-weight: 600;"><i class="bi bi-pencil-square"></i>&nbsp;Ubah</a> |
+                                    <a href="ubah.php?nim=<?= $row['nim']; ?>" class="btn btn-warning btn-sm" style="font-weight: 600;"><i class="bi bi-pencil-square"></i>&nbsp;Ubah</a> |
 
-                                    <a href="hapus.php?nis=<?= $row['nis']; ?>" class="btn btn-danger btn-sm" style="font-weight: 600;" onclick="return confirm('Apakah anda yakin ingin menghapus data <?= $row['nama']; ?> ?');"><i class="bi bi-trash-fill"></i>&nbsp;Hapus</a>
+                                    <a href="hapus.php?nim=<?= $row['nim']; ?>" class="btn btn-danger btn-sm" style="font-weight: 600;" onclick="return confirm('Apakah anda yakin ingin menghapus data <?= $row['nama']; ?> ?');"><i class="bi bi-trash-fill"></i>&nbsp;Hapus</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

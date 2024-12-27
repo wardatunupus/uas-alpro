@@ -11,10 +11,10 @@ if (!isset($_SESSION['login'])) {
 require 'function.php';
 
 // Mengambil data dari nis dengan fungsi get
-$nis = $_GET['nis'];
+$nim = $_GET['nim'];
 
 // Mengambil data dari table siswa dari nis yang tidak sama dengan 0
-$siswa = query("SELECT * FROM siswa WHERE nis = $nis")[0];
+$siswa = query("SELECT * FROM siswa WHERE nim = $nim")[0];
 
 // Jika fungsi ubah lebih dari 0/data terubah, maka munculkan alert dibawah
 if (isset($_POST['ubah'])) {
@@ -92,8 +92,8 @@ if (isset($_POST['ubah'])) {
                 <form action="" method="post" enctype="multipart/form-data">
                     <input type="hidden" name="gambarLama" value="<?= $siswa['gambar']; ?>">
                     <div class="mb-3">
-                        <label for="nis" class="form-label">NIS</label>
-                        <input type="number" class="form-control w-50" id="nis" value="<?= $siswa['nis']; ?>" name="nis" readonly>
+                        <label for="nim" class="form-label">NIM</label>
+                        <input type="number" class="form-control w-50" id="nim" value="<?= $siswa['nim']; ?>" name="nim" readonly>
                     </div>
                     <div class="mb-3">
                         <label for="nama" class="form-label">Nama</label>
